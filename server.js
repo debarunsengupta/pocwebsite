@@ -24,7 +24,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Home page - serve index-node.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index-node.html'));
+    //res.sendFile(path.join(__dirname, 'index-node.html'));
+
+res.sendFile(path.join(__dirname, 'FinalNewGDCAIUsageDashboardPreview.html'));
+    
 });
 
 // Health check
